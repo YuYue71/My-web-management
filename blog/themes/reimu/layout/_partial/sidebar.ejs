@@ -6,20 +6,20 @@
     <script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        const audioList = <%- JSON.stringify(theme.player.aplayer.options.audio || []) %>;
+        const audioList = "<%- JSON.stringify(theme.player.aplayer.options.audio || []) %>";
         if (audioList.length === 0) return;
   
         new APlayer({
           container: document.getElementById('aplayer-sidebar'),
           fixed: false,
-          autoplay: <%= theme.player.aplayer.options.autoplay %>,
+          autoplay: "<%= theme.player.aplayer.options.autoplay %>",
           loop: "<%= theme.player.aplayer.options.loop %>",
           order: "<%= theme.player.aplayer.options.order %>",
           preload: "<%= theme.player.aplayer.options.preload %>",
-          volume: <%= theme.player.aplayer.options.volume %>,
-          mutex: <%= theme.player.aplayer.options.mutex %>,
-          listFolded: <%= theme.player.aplayer.options.listFolded %>,
-          lrcType: <%= theme.player.aplayer.options.lrcType %>,
+          volume: "<%= theme.player.aplayer.options.volume %>",
+          mutex: "<%= theme.player.aplayer.options.mutex %>",
+          listFolded: "<%= theme.player.aplayer.options.listFolded %>",
+          lrcType: "<%= theme.player.aplayer.options.lrcType %>",
           audio: audioList
         });
       });
