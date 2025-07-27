@@ -1,6 +1,7 @@
 ---
 title: gitHub與Git的大致簡單使用教學
 date: 2025-07-27 17-00-00
+categories: 教學筆記
 tags: [GitHub,Git,教學]
 ---
 

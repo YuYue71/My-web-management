@@ -1,6 +1,7 @@
 ---
 title: 簡單的了解我~
 date: 2025-07-24 16-00-00
+categories: 自我介紹
 tags: [六邊形?,自介,Python,Java,C#,Unity2D,Unity3D,HTML,css,JavaScript,繪圖]
 ---
 

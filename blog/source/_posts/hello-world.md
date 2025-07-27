@@ -1,6 +1,7 @@
 ---
 title: 這裡是起點
 date: 2025-07-24 12-00-00
+categories: 廢文
 tags:
 ---
 
