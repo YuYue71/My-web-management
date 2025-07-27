@@ -1,11 +1,12 @@
 <aside id="sidebar">
+  <!-- 這裡紅色都正常,是VSCode的鍋,能正常運行不用在意 -->
   <% if (theme.player.aplayer.enable && !theme.player.meting.enable) { %>
     <div id="aplayer-sidebar" style="margin-bottom:1rem" data-aos="<%= theme.animation.options.home.sidebar %>"></div>
     <link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css">
     <script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        const audioList = "<%- JSON.stringify(theme.player.aplayer.options.audio || []) %>";
+        const audioList = <%- JSON.stringify(theme.player.aplayer.options.audio || []) %>;
         if (audioList.length === 0) return;
   
         new APlayer({
