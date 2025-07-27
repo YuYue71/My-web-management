@@ -2,6 +2,7 @@
 title: 簡單的了解我~
 date: 2025-07-24 16-00-00
 categories: 自我介紹
+cover: https://tse1.mm.bing.net/th/id/OIP.e0EzCsXXb4GYU9rv6IqpcAHaFK?cb=thvnextc2&rs=1&pid=ImgDetMain&o=7&rm=3
 tags: [六邊形?,自介,Python,Java,C#,Unity2D,Unity3D,HTML,css,JavaScript,繪圖]
 ---
 

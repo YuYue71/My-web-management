@@ -2,6 +2,7 @@
 title: gitHub與Git的大致簡單使用教學
 date: 2025-07-27 17-00-00
 categories: 教學筆記
+cover: https://images5.alphacoders.com/106/thumb-1920-1061566.png
 tags: [GitHub,Git,教學]
 ---
 
