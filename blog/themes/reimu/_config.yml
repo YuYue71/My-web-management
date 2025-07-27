@@ -488,10 +488,10 @@ clipboard:
 
 # show categories card on home page
 home_categories:  
-  enable: false
+  enable: true  # 是否展示首页目录卡片？
   content:
-    - categories: # string (single-layer category) or array (multi-layer category)
-      cover: # empty means random cover
+    - categories: 幽月YuYue # 目录名称，字符串类型
+      cover: # 卡片封面，不填则使用随机封面
     - categories:
       cover:
 
@@ -551,13 +551,13 @@ top:
     mask: true # whether to use the images as a mask
 
 share:
-  # - facebook
-  # - twitter
+  - facebook
+  - twitter
   # - linkedin
-  # - reddit
+  - reddit
   # - weibo
   # - qq
-  # - weixin
+  - weixin
 
 ########################################
 # Experimental features
@@ -601,31 +601,33 @@ live2d_widgets:
 # Experimental
 # Please turn on pjax to use this feature
 player:
-  # if you enable meting, you must enable aplayer first
   aplayer:
-    # https://github.com/DIYgod/APlayer
-    enable: false
+    enable: true
     options:
-      audio: []
-      fixed:
-      autoplay:
-      loop:
-      order:
-      preload:
-      volume:
-      mutex:
-      listFolded:
-      lrcType:
+      audio:
+        - name: "Towards the Horizon"
+          artist: "Alexander Nakarada - CreatorChords"
+          url: "/music/towards_the_horizon.mp3"
+          cover: "/images/banner.png"
+      fixed: true
+      autoplay: true      # 自動撥放
+      loop: all           # 循環播放
+      order: list         # 播放順序
+      preload: auto       # 預加載音樂
+      volume: 0.7         # 音量大小
+      mutex: true         # 是否互斥播放
+      listFolded: false   # 播放列表折疊
+      lrcType: 0          # 歌詞類型，0: 不顯示歌詞，1: 顯示內嵌歌詞，2: 顯示外部歌詞
+
   meting:
-    # https://github.com/metowolf/MetingJS
-    # if you want to use meting, please enable aplayer first
     enable: false
-    meting_api: # custom api
+    meting_api:
     options:
       id: 2265921590
       server: netease
       type: playlist
-      auto:
+      auto: false
+
 
 ########################################
 # pangu.js
@@ -827,4 +829,4 @@ vendor:
       integrity: sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa
     aplayer:
       src: webcache|aplayer@1.10.1/dist/APlayer.min.css
-      integrity: sha384-tLMkTWh2pfXNWGFlUS0w1TFtRG5xZ9lPWFOooj+vDDLIL+xBGQU/voDBY5XE2lVh
+      integrity: sha384-tLMkTWh2pfXNWGFlUS0w1TFtRG5xZ9lPWFOooj+vDDLIL+xBGQU/voDBY5XE2lVh  
