@@ -609,7 +609,7 @@ player:
           artist: "Alexander Nakarada - CreatorChords"
           url: "/music/towards_the_horizon.mp3"
           cover: "/images/banner.png"
-      fixed: true
+      fixed: false
       autoplay: true      # 自動撥放
       loop: all           # 循環播放
       order: list         # 播放順序
